@@ -1,13 +1,11 @@
-*{
-    font-family: 'Courier New', Courier, monospace
 
-}
 html,body{
     height:100%;
     max-height: 100%;
     width:100%;
     max-width: 100%;
     background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #toolbar{
@@ -44,6 +42,8 @@ html,body{
     background-color: #222;
     color: white;
     font-size: 1.25rem;
+    font-family: 'Courier New', Courier, monospace
+
 }
 
 #console{
@@ -51,6 +51,7 @@ html,body{
     color: green;
     font-weight: bold;
     font-size: 1.15rem;
+    font-family: 'Courier New', Courier, monospace
 
 }
 
@@ -99,6 +100,9 @@ html,body{
     max-width: .8rem;
     max-height: .8rem;
     transform: translate(-50px, -50px);
+}
+
+#outputHTML{
 }
 
 #outputHTML h1{
