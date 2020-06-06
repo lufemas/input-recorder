@@ -71,13 +71,18 @@ $editorText.addEventListener('keydown', (e)=>{
 
         let key = e.key
 
-        key == 'Shift' ? key = '' : null
-        key == 'Enter' ? key = '\n' : null
+        if(key.length > 1){
 
-        if( key == 'Backspace'){
+            if( key == 'Backspace'){
 
-            $editorText.value = $editorText.value.substring(0, $editorText.value.length - 1);
-        
+                $editorText.value = $editorText.value.substring(0, $editorText.value.length - 1);
+            
+            }else if( key == 'Enter'){
+                
+                key = '\n';
+                $editorText.value += key
+            }
+
         }else{
 
             $editorText.value += key

@@ -21,18 +21,30 @@
         <article class="left block">
 
             <section id="editor" class="block">
-                <textarea name="" id="editor-text" class="block"></textarea>
+                <div class="window-toolbar">Text Editor</div>
+                <textarea name="" id="editor-text" class="block window"></textarea>
             </section>
 
         </article>
 
         <article class="right block">
 
-            <section id="outputHTML" class="block">
-            </section>
+            <div class="block">
+                <div class="window-toolbar">HTML Viewer</div>
 
-            <section id="console" class="block">
-            </section>
+                <section id="outputHTML" class="block window">
+                </section>
+            </div>
+
+            <div class="block">
+                <div class="window-toolbar">Console</div>
+
+                <section id="console" class="block window">
+    
+                        Console not available.
+                
+                </section>   
+            </div>
 
         </article>
 
@@ -51,7 +63,7 @@
         </div>
     </footer>
 
-    <a href="" id="ad">DOWNLOAD</a>
+    <!-- <a href="" id="ad">DOWNLOAD</a> -->
 
 <script src="./js/demo-data.js"></script>
 <script src="./js/record-audio.js"></script>
