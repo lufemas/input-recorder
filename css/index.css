@@ -1,0 +1,59 @@
+
+html,body{
+    height: 100%;
+}
+.ui{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.274) .15rem .15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.record{
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 3rem 2rem;
+
+}
+
+.stop{
+    background-color: rgb(201, 81, 60);
+    color: white;
+    border-radius: .5rem;
+
+}
+
+.play{
+    position: relative;
+    background-color: rgb(177, 238, 85);
+    border-radius: .5rem;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding-right: 3rem;
+}
+
+.playing{
+    background-color: rgb(107, 143, 55);
+    color: white;
+    /* pointer-events: none; */
+    cursor: none;
+}
+
+#fake-cursor{
+    position: absolute;
+    max-width: .8rem;
+    max-height: .8rem;
+    transform: translate(-50px, -50px);
+}

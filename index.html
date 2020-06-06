@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/input-recorder.css">
+
+    <title>Input Recorder</title>
+</head>
+<body>
+	<div id="fake-cursor"><img src="./img/pointer.png" alt="pointer"></div>
+
+    <nav id="toolbar">
+        <button id="demo">Play Demo</button>
+    </nav>
+
+    <main class="main">
+
+        <article class="left block">
+
+            <section id="editor" class="block">
+                <textarea name="" id="editor-text" class="block"></textarea>
+            </section>
+
+        </article>
+
+        <article class="right block">
+
+            <section id="outputHTML" class="block">
+            </section>
+
+            <section id="console" class="block">
+            </section>
+
+        </article>
+
+
+    </main>
+    <footer id="recorder">
+        <audio
+        controls
+         id="player">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+        <div class="record-btn-wrapper">
+            <i class="fas fa-circle record-btn" id="record-btn"></i>
+            <!-- <i class="fas fa-square stop-btn" id="stop-btn"></i> -->
+        </div>
+    </footer>
+
+    <a href="" id="ad">DOWNLOAD</a>
+
+<script src="./js/demo-data.js"></script>
+<script src="./js/record-audio.js"></script>
+<script src="./js/input-recorder.js"></script>
+</body>
+</html>
